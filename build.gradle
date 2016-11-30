@@ -1,0 +1,27 @@
+apply plugin: 'groovy'
+apply plugin: 'idea'
+apply plugin: 'maven'
+
+dependencies {
+    compile gradleApi()
+    compile 'org.codehaus.groovy:groovy-all:2.4.7'
+}
+
+//apply plugin: LibraPlugin
+//
+//libra {
+//    libraRoot = ''
+//    libra = ['abc.js:0.1':'./main/resources/abc.js']
+//}
+
+//buildscript {
+    repositories {
+        mavenCentral()
+    }
+    dependencies {
+        compile 'commons-io:commons-io:2.4'
+    }
+//}
+
+version = '1.0-SNAPSHOT'
+group = 'io.belov.gradle'
